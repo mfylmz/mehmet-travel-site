@@ -65,3 +65,13 @@
   border: none;
   border-radius: 40px 40px;
 }
+
+.navigation-cards {
+  display: flex;
+  background-color: white;
+}
+
+.navigation-cards img {
+  width: 300px;
+  height: 400px;
+}
