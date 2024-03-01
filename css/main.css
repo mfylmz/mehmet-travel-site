@@ -1,4 +1,15 @@
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .header__flex {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center text content */
+  }
+
+  .header__text,
+  .header-hero__image {
+    flex: none; /* Reset flex to prevent stretching */
+    width: 100%; /* Set width to full for smaller screens */
+  }
 }
 
 .nav-bar {
@@ -23,7 +34,7 @@
 }
 .nav-bar ul li a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   font-weight: 400;
 }
 
@@ -31,7 +42,7 @@
   text-decoration: none;
   display: flex;
   margin-right: 45rem;
-  color: black;
+  color: #335576;
   font-size: 1.875rem;
 }
 
@@ -47,16 +58,17 @@
 
 .header__flex {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .header__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex: 1;
+  padding: 80px;
 }
 
 .header-hero__image {
-  display: flex;
+  flex: 1;
 }
 .header__button a {
   text-decoration: none;
@@ -70,45 +82,74 @@
   font-size: 1.125rem;
   border: none;
   border-radius: 2.5rem 2.5rem;
+  margin-top: 30px;
 }
 
-.recomendations {
-  background-color: white;
-}
-.recomendations h2 {
+.recommendations-heading {
   position: relative;
   font-weight: bold;
-  font-size: 2.5rem;
-  top: 2.5rem;
-  left: 3.75rem;
+  font-size: 1.3rem;
+  top: 4rem;
+  left: 18rem;
 }
 
 .navigation-cards {
   display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  flex-wrap: wrap;
   justify-content: center;
-
-  padding-bottom: 9.375rem;
-  padding-top: 6.25rem;
-  padding-left: 120px;
 }
 
-.navigation-cards img {
+.card {
   width: 23rem;
   height: 33rem;
+  margin: 30px; /* Adjust margin between cards as needed */
+  background-color: white;
   color: black;
-
   border: solid hsla(0, 0%, 0%, 20) 1px;
   box-shadow: 0 4px 4px hsla(0, 0%, 0%);
-}
-.navigation-cards p {
   position: relative;
-  top: 15rem;
-  right: 11.25rem;
-  color: white;
-  font-size: 2.5rem;
+}
+.card {
+  width: 23rem;
+  height: 33rem;
+  margin: 30px;
+  background-color: white;
+  color: black;
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 3%;
+}
+.card-content {
+  position: relative;
+}
+.card-content img {
+  width: 23rem;
+  height: 33rem;
+  object-fit: cover;
+  border-radius: 3%;
+}
+.card-content p {
+  position: absolute;
+  top: 95%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 10px;
   font-weight: bold;
+  color: white;
+  font-size: 24px;
+  text-align: center;
 }
 
-.footer{
-  background-color: pink;
-  display: flex;}
+.footer {
+  background-color: #FEFAF5;
+  display: flex;
+}
+
+.text--orange {
+  color: #DB7A4E;
+  display: inline-block;
+}
