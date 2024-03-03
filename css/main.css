@@ -11,11 +11,13 @@
     width: 100%; /* Set width to full for smaller screens */
   }
 }
-
+.header__text h1 {
+  color: #335576;
+}
 .nav-bar {
   background-color: #ffffff;
   width: 100%;
-  height: 30%;
+  height: 8%;
   display: flex;
   justify-content: space-between;
 }
@@ -84,6 +86,8 @@
   border-radius: 2.5rem 2.5rem;
   margin-top: 30px;
 }
+.header__button:active {
+}
 
 .recommendations-heading {
   position: relative;
@@ -91,6 +95,7 @@
   font-size: 1.3rem;
   top: 4rem;
   left: 18rem;
+  color: #335576;
 }
 
 .navigation-cards {
@@ -145,11 +150,44 @@
 }
 
 .footer {
-  background-color: #FEFAF5;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: flex-start;
+  background-color: #fefaf5;
+  height: 20%;
 }
 
-.text--orange {
-  color: #DB7A4E;
-  display: inline-block;
+.footer__section span {
+  color: #db7a4e;
+
+  display: flex;
+  margin: 0%;
+  font-size: 15px;
+}
+
+.footer_alligments {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--sidebyside {
+  display: flex;
+}
+.footer__section p {
+  padding-right: 80px;
+  padding-top: 10px;
+}
+.footer__section h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #335576;
+}
+
+.icons {
+  width: 38px;
+  height: 40px;
+  margin: auto;
+  padding-right: 20px;
 }
