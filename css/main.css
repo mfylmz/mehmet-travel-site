@@ -159,6 +159,8 @@
 .footer--sidebyside {
   display: flex;
 }
+
+
 .footer__section p {
   padding-right: 5rem;
   padding-top: 0.62rem;
